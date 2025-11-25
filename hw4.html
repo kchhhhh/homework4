@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中景點一日遊 StoryMap</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Noto Serif TC", serif;
+            background: #f4f1e9;
+            color: #333;
+        }
+
+        /* 頁面標題 */
+        header {
+            background: #9c7a5b;
+            padding: 22px;
+            text-align: center;
+            font-size: 28px;
+            color: white;
+            letter-spacing: 2px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* 說明文字區塊 */
+        .content {
+            padding: 30px 10%;
+            line-height: 1.8;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* StoryMap 外框（含 hover 效果） */
+        .iframe-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .iframe-wrapper iframe {
+            width: 90%;
+            height: 800px;
+            border: 3px solid #9c7a5b;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        /* 滑鼠滑過互動（無 JS） */
+        .iframe-wrapper iframe:hover {
+            transform: scale(1.01);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.35);
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>台中景點一日遊 StoryMap</header>
+
+<div class="content">
+    以下為以台中景點與旅遊路線所製作的 StoryMap，透過互動式地圖方式呈現旅遊動線與各景點說明。
+</div>
+
+<!-- 你的 StoryMap iframe（已完整放入） -->
+<div class="iframe-wrapper">
+    <iframe src="https://uploads.knightlab.com/storymapjs/e3d51b699f26d610924598ddffc37a71/tai-zhong-jing-dian-yi-ri-you/index.html" frameborder="0"></iframe>
+</div>
+
+<footer>© 台中景點一日遊 — StoryMap 展示頁面</footer>
+
+</body>
+</html>
